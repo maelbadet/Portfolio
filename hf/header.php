@@ -46,7 +46,7 @@
                     <a class="nav-link" href="projet.php">Projets <span class="sr-only">(current)</span></a>
                 </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="ServiceUtilisateurs.php">contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="contact.php">contact <span class="sr-only">(current)</span></a>
                   </li>
               </ul>
             </div>
