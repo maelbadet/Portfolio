@@ -1,0 +1,196 @@
+<!--
+===========================================================
+===========================================================
+===================  Exclusivité de  ======================
+===================   Badet Mael     ====================== 
+===========================================================
+===========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  
+    <!--implémentation du JS de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--implémentation du CSS de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>mon portfolio</title>
+</head>
+
+<header>
+        <!--Menu avec bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary position-fixed fixed-top ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="DevPerso.html">Présentation détaillé <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="projet.html">Projets <span class="sr-only">(current)</span></a>
+                </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">contact <span class="sr-only">(current)</span></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+
+<body>
+
+<!--test de l'image responsive pour occuper toute la taille de l'écran-->
+
+<img class="img-responsive" src="img/pc_background.jpg" style=width:100%>
+
+<article class="testimg">
+  <h2>Maël Badet</h2>
+  <p>étudiant en BTS SIO<p>
+</article>
+
+<!--test de l'image responsive pour occuper toute la taille de l'écran-->
+
+<!-- Div du a propos pour la présentation personnel-->
+<h2 class="pt-5">A propos de moi</h2>
+<div class="pt-3 border-bottom border-secondary"> 
+  <article class="d-flex flex-row justify-content-around" >
+    <img src="img/photo_mael.PNG" alt="">
+    <p class="w-50">Salut ! Je m'appelle Maël Badet, je suis un Développeur junior dans le domaine du web depuis plus de 4 ans,<br>
+      actuellement en deuxième année de BTSSIO, l'expérience que j'ai pus accumulé durant ce BTS m'offre des possibilités dans plusieurs domaines comme la mise 
+      en place de site internet statiques et dynamiques, mais aussi des applications. De plus je suis aussi cappable de paramétrer des routeurs et des switchs, 
+      et de réaliser des debugages de réseaux. Pour finir je peux aussi opérer sur la partie gestion des incidents. On peut donc dire que je suis quelqu'un de 
+      très polivalent, pouvant intervenir aussi bien sur la partie développement que la partie réseaux d'une entreprise. Pour plus de précision, vous pouvez vous
+      rendre sur la page de <a href="projet.php">mes projets </a>.
+    </p>
+  </article>
+</div>
+<!-- Fin du Div du a propos pour la présentation personnel-->
+
+<!--Div pour présentations de mes 3 plus gros projets-->
+<div class="pt-3 border-bottom border-secondary">
+<h2>quelques projets</h2>
+<div class="d-flex flex-row justify-content-around align-items-stretch pt-3">
+ 
+ 
+        <!-- Button ppe clemessy -->
+      <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#ppeClemessy">
+        PPE Android Clemessy
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ppeClemessy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">PPE android Clemessy</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/clemessy.png" alt=""></br></br>
+                CLEMESSY est une marque du groupe Eiffage Énergie Systèmes, c’est sous cette marque que sont fédérés l’ensemble des compétences et expertises du groupe, dédiées au monde de l’industrie.
+                Vous êtes mandaté par le service chargé de la gestion des équipements, afin de créer en Java une application spécifique pour téléphone mobile Android. Celle-ci devra aider à  tracer les différents matériels utilisés au sein de l’entreprise (caisses à outils, échelles, pirs, etc…).</br></br>
+                lien vers le gitLab du projet Android : <a href="http://gitlab.lev-btssio.fr/mael.badet/apiclemessyandroid">ClemessyAndroid</a></br>
+                lien ver le gitLab de l'API du projet android : <a href="http://gitlab.lev-btssio.fr/mael.badet/apiclemessy_php">apiClemessy</a> 
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+  
+        <!-- Button ppe gestion des stages -->
+        <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#ppeStage">
+          PPE Gestion Des Stages
+          </button>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="ppeStage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">PPE Gestion Des Stages</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="img/gestionStage.png" alt=""></br></br>
+                  Une société assure des cours de formation continue auprès de stagiaires salariés de diverses entreprises.
+                  Pour assurer la gestion des formations, une application web est envisagée. Une base de donnée en postgresql et un code en HTML/PHP et SYMFONY.
+                  Notre rôle étant de rendre une application web stable et sécurisé.</br>
+                  lien vers le GitLab : <a href="http://gitlab.lev-btssio.fr/mael.badet/tp_final_symfony">TP Gestion des étudiants</a>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+          </div>
+          </div>
+
+            <!-- Button site prestaevent -->
+            <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#LDeclic">
+              site Presta Event
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="LDeclic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="ESER">LDeclic</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="img/ldeclic.png" alt="" class="center"></br></br>
+                Lors de mon stage de deuxième année, j'ai été ammené a faire un site sur wordpress pour un client dont le but était la location et l'acaht revente
+              de produit de festival amazon tel que des enceintes, des barrières ou même des toilettes portatives. J'ai pu utilisé des extensions wordpress tels que
+              whoocomerce pour la partie paiement du site et d'autres.</br></br>
+                  liens vers le site presta event : <a href="https://presta-event.com">Presta Event</a>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+            </div>
+
+  <a href="projet.html">En savoir plus</a>
+</div>
+</div>
+<!--Fin du Div pour présentations de mes 3 plus gros projets-->
+
+<div class="pt-3 border-bottom border-secondary">
+  <h2>A voir aussi </h2>
+  <div>
+    <p>présentation détaillé</p>
+    <p>projets</p>
+    <p>contact</p>
+  </div>
+</div>
+
+</body>
+</html>
