@@ -57,15 +57,17 @@
     <h2 class="pt-2 pd-3 mt-5 bg-dark text-white"><marquee behavior="scroll">les différents Projets</marquee></h2>
 
     <h2 class = "pt-3 ">Projets SLAM</h2>
+    <div class="container-sm">
     <div class = "d-flex flex-row justify-content-around border-bottom border-secondary">
-
+        
         <!--Mise en place des principaux projets de slam en android et Symfony -->
 
         <!-- Button ppe clemessy -->
         <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#ppeClemessy">
         PPE Android Clemessy
         </button>
-
+        
+         
         <!-- Modal -->
         <div class="modal fade" id="ppeClemessy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -178,37 +180,14 @@
         </div>
         </div>
 
-        <!-- Button autre projet -->
-        <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#projet">
-        nom du projet
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="projet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projet">projet</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    je met un truc random la dedans
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-        </div>
-
+   
+    </div>
 </div>
     
     <h2 class = "pt-3 ">Projets SISR</h2>
     <div class = "d-flex flex-row justify-content-around border-bottom border-secondary">
-        <p>mettres quelques projets de SISR</p>
-        <!-- Button autre projet -->
+
+        <!-- Button projet -->
         <button type="button" class="btn btn-secondary mb-2" data-toggle="modal" data-target="#projet">
         nom du projet
         </button>
@@ -319,15 +298,6 @@
         <p>mettres quelques projets de gestion des incidents</p>
     </div>
 
-    <h2 class = "pt-3 ">Projets Gestion de Projet</h2>
-    <div class = "d-flex flex-row justify-content-around border-bottom border-secondary">
-        <p>mettres quelques projets de gestion de projet</p>
-    </div>
-
-    <h2 class = "pt-3 ">Projets Services aux Utilisateurs</h2>
-    <div class = "d-flex flex-row justify-content-around border-bottom border-secondary">
-        <p>mettres quelques projets de services aux utilisateurs</p>
-    </div>
 
 <!----------------------Développement des différents projets personnel réaliser au cours des deux années----------------------->
 
@@ -351,7 +321,7 @@
         </div>
         <div class="modal-body">
             <img src="img/eserLogo.jpg" alt="" class="center"></br></br>
-            Ceci était mon stage de première année. Le lien ci-dessous correspond a la première partie du site fait totalement de ma part en HTML/CSS/JS/PHP.
+            Ceci était mon stage de première année. Le lien ci-dessous correspond a la première partie du site fait totalement de ma part en HTML/CSS/JS.
             J'ai aussi du réalisé la charte graphique du site en relation avec le client ce qui ma permis de pouvoir apprendre les bases de la communication et de la négociation
             avec différents types de présentations de couleurs etc..</br></br>
             liens vers le site en préparation : <a href="https://maelbadet.github.io/web/index.html">E.S.E.R électricité</a>
@@ -380,7 +350,7 @@
         </div>
         <div class="modal-body">
             <img src="img/ldeclic.png" alt="" class="center"></br></br>
-           Lors de mon stage de deuxième année, j'ai été ammené a faire un site sur wordpress pour un client dont le but était la location et l'acaht revente
+           Lors de mon stage de deuxième année, j'ai été ammené a faire un site sur wordpress pour un client dont le but était la location et l'acahat revente
         de produit de festival amazon tel que des enceintes, des barrières ou même des toilettes portatives. J'ai pu utilisé des extensions wordpress tels que
         whoocomerce pour la partie paiement du site et d'autres.</br></br>
             liens vers le site presta event : <a href="https://presta-event.com">Presta Event</a>
@@ -394,69 +364,13 @@
 
 
     </div>
+
+
+    <h2 class = "pt-3 ">Tableau des compétences</h2>
 </body>
 
+<style>
+    @media (max-width: 767.98px){
 
-<!-- le filtrage par choix se fera sur la fin 
-
-
-    <h2 class = "pt-5 mt-5 ">Filtré par choix</h2>
-
-    <?php 
-    $testFiltre = [
-        'slam' => 'slam',
-        'sisr' => 'sisr',
-        'patrimoine' => 'patrimoine',
-        'incident' => 'incident',
-        'projet' => 'projet',
-        'utilisateur' => 'utilisateur',
-        'personnel' => 'personnel',
-    ]
-
-    ?>
-
-<form method="POST" class="pt-3 d-flex flex-row justify-content-around border-bottom border-secondary border-top">
-
-    <div>
-    <label for="slam">SLAM</label>
-    <input type="checkbox" id="slam" name="testFiltre[]" value="slam">
-    </div>
-
-    <div>
-    <label for="sisr">SISR</label>
-    <input type="checkbox" id="sisr" name="testFiltre[]" value="sisr">
-    </div>
-
-    <div>
-    <label for="patrimoine">Patrimoine</label>
-    <input type="checkbox" id="patrimoine" name="testFiltre[]" value="patrimoine">
-    </div>
-
-    <div>
-    <label for="incident">Incident</label>
-    <input type="checkbox" id="incident" name="testFiltre[]" value="incident">
-    </div>
-
-    <div>
-    <label for="projet">Projet</label>
-    <input type="checkbox" id="projet" name="testFiltre[]" value="projet">
-    </div>
-
-    <div>
-    <label for="utilisateur">Utilisateur</label>
-    <input type="checkbox" id="utilisateur" name="testFiltre[]" value="utilisateur">
-    </div>
-
-    <div>
-    <label for="personnel">Personnel</label>
-    <input type="checkbox" id="personnel" name="testFiltre[]" value="personnel">
-    </div>
-</form>
-
-<?php
-foreach($testFiltre as $key=>$value){
-    if (isset($_POST['testFiltre']) && in_array($key, $_POST['testFiltre'])){
-        echo $value . '</br>';
     }
-}
-?>-->
+</style>
